@@ -4,15 +4,15 @@
 
 :root{ 
     /* Declaração de variáveis para quando precisar definir a cor */
-    --vermelho: #B20000;
-    --vermelho-escuro: #931914;
-    --salmao:  #d07a79;
-    --azul-principal: #015c6f;
-    --azul-alternativo: #08558b;
-    --azul-bebe: #95dbe3;
-    --cinza: #333333;
-    --cinza-tabela:  #a6a6a6;
-    --off-white-tabela: #f3f3f3;
+    --vermelho: #000;
+    --vermelho-escuro: #000;
+    --salmao:  #000;
+    --azul-principal: #000;
+    --azul-alternativo: #000;
+    --azul-bebe: #000;
+    --cinza: #000;
+    --cinza-tabela:  #000;
+    --off-white-tabela: #000;
 }
 
 *{
@@ -26,6 +26,7 @@ body {
     width: 100%;
     max-width: 100%;
     font-family: 'Poppins', sans-serif;
+    background-color: #000;
 }
 
 .container{ 
@@ -51,7 +52,7 @@ body header#topo #acessibilidade{
     display: flex ;
     justify-content: space-between; /*Isso faz com que jogue cada elemento para o lado oposto*/
     align-items: center;
-    background-color: #fff ;
+    background-color: var(--vermelho);
     padding-top: 0.2rem ;
     padding-bottom: 0.2rem;  
 }
@@ -63,7 +64,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 }
 
 #atalhos-internos li, #botoes-acessibilidade li, #botoes-acessibilidade li a, #atalhos-internos li a{
-    color: #000;
+    color: #ff0;
     font-size: 0.8rem;
 }
 
@@ -103,13 +104,13 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 #botoes-conta a{
     text-decoration: none;
-    color: #fff;
+    color: #ff0;
     font-weight: bold;
 }
 
 #botoes-conta #btn_cadastro{
-    color: var(--vermelho);
-    background-color: #fff;
+    color: #ff0;
+    background-color: #000;
     border: 1px solid #fff;
     border-radius: 10px;
     padding: 0.7rem 1rem;
@@ -168,14 +169,19 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
     line-height: 1.5rem;
 }
 
-.grupo-rodape a, .grupo-rodape li a, .grupo-rodape p{
+.grupo-rodape a, .grupo-rodape li a{
+    text-decoration: none;
+    color: #ff0;
+    font-size: 0.9rem;
+} 
+.grupo-rodape p{
     text-decoration: none;
     color: #fff;
     font-size: 0.9rem;
 }
 .grupo-rodape li a:hover, .grupo-rodape a:hover{
     text-decoration: underline;
-    color: rgb(148, 148, 148);
+    color: #ff0;
 }
 
 #rodape .grupo-rodape .titulo-grupo-rodape{
@@ -229,7 +235,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 #conteudo-home-principal h1{
     font-size: 4rem;
-    color: var(--azul-principal);
+    color: #fff;
 }
 
 #conteudo-home-principal h2{
@@ -263,7 +269,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 .itens-vantagens h3{
     font-size: 1.1rem;
-    color: var(--azul-principal);
+    color: #fff;
     margin-left: 1rem;
 }
 
@@ -273,7 +279,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 .titulos-secoes{
     font-size: 1.6rem;
-    color: var(--azul-principal);
+    color: #fff;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -288,6 +294,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
     background-color: var(--azul-bebe);
     padding-bottom: 1.5rem;
     width: 18rem;
+    border: 2px solid #fff;
 }
 
 .itens-destaque img{
@@ -302,6 +309,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 .eventostitle p{
     margin: 0.8rem 0;
+    color: #fff;
 }
 
 .eventostitle p:nth-child(1){
@@ -315,10 +323,11 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 .eventostitle .btn_info{
     text-decoration: none;
-    background-color: #fff;
+    background-color: #000;
     padding: 0.7rem 1rem;
-    color: #000;
+    color: #ff0;
     border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 /* Fim destaques */
@@ -326,7 +335,6 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 /* Inicio eventos em geral */
 
 #eventos-gerais{
-    
     background-color: var(--vermelho);
     display: flex;
     flex-direction: column;
@@ -377,12 +385,14 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
     cursor: pointer;
     margin-bottom: 2rem;
     font-size: 1rem;
+    border: 1px solid #fff;
 }
 
 .item-evento-geral{
     background-color: var(--salmao);
     padding-bottom: 1.5rem;
     border-radius: 20px;
+    border: 1px solid #fff;
 }
 
 .item-evento-geral img{
@@ -394,6 +404,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
     text-align: center;
     margin-top: 1rem;
     font-size: 1.1rem;
+    color: #fff;
 }
 
 /* Fim eventos em geral */
@@ -410,6 +421,7 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 #lista-regras li{
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 #regras-cadastrar{
@@ -423,17 +435,18 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 #regras-cadastrar p{
     width: 20rem;
     text-align: center;
-    color: var(--azul-principal);
+    color: #fff;
     font-weight: bold;
 }
 
 #regras-cadastrar a{
-    color: #fff;
+    color: #ff0;
     text-decoration: none;
     font-weight: bold;
     background-color: var(--azul-principal);
     padding: 0.9rem 1.2rem;
     border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 /* Fim regras */
@@ -453,16 +466,17 @@ body header#topo #acessibilidade #atalhos-internos, body header#topo #acessibili
 
 /* login-container */
 #login-container {
-    background-color: #e1e1e1;
+    background-color: #000;
     width: 24rem;
     padding: 2.5rem 3rem;
     border-radius: 10px;
     text-align: center;
+    border: 2px solid #fff;
 }
 
 h1{
     font-size: 1.6rem;
-    color: var(--azul-principal);
+    color: #fff;
 } 
 
 /*formulário*/
@@ -507,10 +521,11 @@ h1{
     border: none;
     text-align:center;
     font-weight:bold;
-    color: #fff;
+    color: #ff0;
     background-color:var(--azul-principal);
     cursor:pointer;
     text-decoration: none;
+    border: 1px solid #fff;
 }
 
 #login-container form input[type="submit"]{
@@ -518,10 +533,11 @@ h1{
     font-weight:bold;
     border:none;
     border-radius:10px;
-    color: #fff;
+    color: #ff0;
     background-color:var(--azul-principal);
     cursor:pointer;
     padding: 0.6rem auto;
+    border: 1px solid #fff;
 }
 
 #login-container form input[type="submit"]:hover, #submit-link-admin:hover{
@@ -539,11 +555,11 @@ h1{
     font-size: 1rem;
     border: none;
     text-decoration: none;
-    color: var(--cinza);
+    color: #fff;
 }
 
 #esqueceuasenha:hover, #cadastre-se:hover{
-    color: var(--azul-alternativo);
+    color: #fff;
 }
 
 #separador{
@@ -552,6 +568,7 @@ h1{
     align-items: center;
     margin: 0 0 2rem 0;
     font-size: 0.7rem;
+    color: #fff;
 }
 
 #separador::before{
@@ -559,7 +576,7 @@ h1{
     height: 1px;
     width: 6rem;
     display: block;
-    background-color: #000;
+    background-color: #fff;
     margin-right: 0.5rem;
 }
 
@@ -568,18 +585,19 @@ h1{
     height: 1px;
     width: 6rem;
     display: block;
-    background-color: #000;
+    background-color: #fff;
     margin-left: 0.5rem;
 }
 
 #naopossuiconta {
     display: flex;
     justify-content: space-between;
+    color: #fff;
 }
 
 #cadastre-se {
     text-align: right;
-    color: var(--cinza);
+    color: #ff0;
     font-weight: bold;
     text-decoration: none;
 }
@@ -590,7 +608,7 @@ h1{
 
 h1#titulo-gerenciar-eventos{
     font-size: 1.6rem;
-    color: var(--azul-principal);
+    color: #fff;
     text-align: center;
     font-weight: bold;
     margin: 3rem 0;
@@ -598,11 +616,11 @@ h1#titulo-gerenciar-eventos{
 
 /* Inicio divisão de buscar e filtro*/
 .secao-gerenciamento #busca-eventos-gerenciar{
-    background-color: var(--vermelho);
+    background-color: #000;
 }
 
 .secao-gerenciamento #busca-eventos-gerenciar input{
-    background-color: var(--vermelho);
+    background-color: #000;
     color: #fff;
 }
 
@@ -629,6 +647,7 @@ h1#titulo-gerenciar-eventos{
     font-size: 1rem;
     margin-left: 0.5rem;
     cursor: pointer;
+    color: #fff;
 }
 
 /* Fim divisão de buscar e filtro*/
@@ -647,10 +666,11 @@ h1#titulo-gerenciar-eventos{
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
+    color: #fff;
 }
 
 #tabela-gerenciamento table tr th, #tabela-gerenciamento table tr td{
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 0.5rem 0.8rem;
 }
 
@@ -691,10 +711,11 @@ h1#titulo-gerenciar-eventos{
     line-height: 1.5rem;
     text-align: justify;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .divisao-paragrafos p a{
-    color: #000;
+    color: #ff0;
 }
 
 /* Fim página de acessibilidade */
@@ -746,7 +767,7 @@ h1#titulo-gerenciar-eventos{
 
     #tabela-gerenciamento table tr{
         display: block;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #fff;
     }
 
     #tabela-gerenciamento table tr:first-child, #tabela-gerenciamento table tr:last-child{
