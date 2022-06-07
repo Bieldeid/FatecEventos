@@ -45,7 +45,7 @@ function validarCampos() {
 
     let timerInterval
     Swal.fire({
-        icon: 'success',
+        color: '#04631d',
         title: 'Cadastro realizado com sucesso!',
         timer: 2000,
         didOpen: () => {
