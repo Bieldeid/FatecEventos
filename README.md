@@ -2,7 +2,7 @@
 Aplicação que permite uma fácil divulgação e gerenciamento de eventos realizados em cada unidade de Fatec. Nela é possível visualizar opções disponíveis de programações para se cadastrar, além dos administradores de eventos conseguirem obter uma visão geral dos cadastrados para melhor organização.
 
 <div align='center'>
-    <img src='github/Capa.png' width='90%'>
+    <img src='.github/front-cover.png' width='90%'>
 </div>
 
 ## 🚀 Tecnologias
