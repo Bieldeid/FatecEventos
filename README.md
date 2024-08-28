@@ -5,7 +5,7 @@ Aplicação que permite uma fácil divulgação e gerenciamento de eventos reali
     <img src='.github/front-cover.webp' width='90%'>
 </div>
 
-## 🚀 Tecnologias
+## Tecnologias 🤖
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -14,6 +14,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/)
 
-## 💻 Acesse o projeto online
-
-- https://mateussantanasilva.github.io/FatecEventos/
+## Membros do grupo 👩🏻‍💻🧑🏻‍💻 
+- [Bianca Santos](https://github.com/Biancasantoss)
+- [Gabriel Santos](https://github.com/Bieldeid)
+- [Giovanna Silva](https://github.com/giovannapfs)
+- [Karoline Souza](https://github.com/koralinee)
+- [Mateus Santana](https://github.com/mateussantanasilva)
